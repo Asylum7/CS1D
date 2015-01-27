@@ -1,8 +1,8 @@
 /*
  * header.h
  *
- *  Created on: Dec 4, 2014
- *      Author: jdavis107
+ *  Created on: Jan 27, 2015
+ *      Author: Asylum89
  */
 
 #ifndef HEADER_H_
@@ -11,8 +11,13 @@
 #include<iostream>
 #include<iomanip>
 #include<string>
+#include "Deque.h"
 using namespace std;
 
-bool IsPalindrome(string aString);
+bool IsPalindrome(Deque<char>palindrome);
+
+void PrintPalindrome(Deque<char>palindrome);
+
+
 
 #endif /* HEADER_H_ */
