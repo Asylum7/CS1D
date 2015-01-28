@@ -1,0 +1,29 @@
+dad
+IS a palindrome!
+
+radar
+IS a palindrome!
+
+Otto
+IS a palindrome!
+
+mom
+IS a palindrome!
+
+tigers
+Is NOT a Palindrome!
+
+A man, a plan, a canal, Panama
+IS a palindrome!
+
+Isn't this class cool?
+Is NOT a Palindrome!
+
+Was it a car or a cat I saw?
+IS a palindrome!
+
+Sit on a potato pan, Otis
+IS a palindrome!
+
+Saddleback is a great place to learn
+Is NOT a Palindrome!

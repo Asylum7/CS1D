@@ -1,4 +1,10 @@
-
+/************************************************************************
+* AUTHOR 		: James Davis
+* ASSIGNMENT # 	: 1
+* CLASS 		: CS1D
+* SECTION 		: T Th 5:30pm
+* DUE DATE 		: 1/27/2015
+************************************************************************/
 #ifndef DEQUE_H_
 #define DEQUE_H_
 
@@ -55,7 +61,7 @@ Deque<object>::~Deque()
 template <class object>
 void  Deque<object>::FillDeque(string palindrome)
 {
-	for(int index = 0; index < palindrome.size(); index ++)
+	for(unsigned int index = 0; index < palindrome.size(); index ++)
 	{
 		Enqueue(palindrome[index]);
 	}

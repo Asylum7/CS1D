@@ -1,7 +1,14 @@
+/************************************************************************
+* AUTHOR 		: James Davis
+* ASSIGNMENT # 	: 1
+* CLASS 		: CS1D
+* SECTION 		: T Th 5:30pm
+* DUE DATE 		: 1/27/2015
+************************************************************************/
 #include "header.h"
 using namespace std;
 
-bool IsPalindrome(Deque<char>palindrome)
+bool IsPalindrome(Deque<char>&palindrome)
 {
 	bool isPal = true;
 
@@ -9,21 +16,27 @@ bool IsPalindrome(Deque<char>palindrome)
 	string compareStr;
 	string reverseStr;
 
+	Deque<char>paliForward;
+	Deque<char>paliReverse;
+
 	for(count = 0; count < palindrome.Size(); count ++)
 	{
 		if(isalpha(palindrome.Front()))
 		{
-			compareStr[count] = toupper(palindrome.Dequeue());
+			paliForward.Enqueue(toupper(palindrome.Front()));
+			paliReverse.RevEnQ(toupper(palindrome.Front()));
 		}
+		palindrome.Enqueue(palindrome.Dequeue());
 	}
 
 	count = 0;
 
-	while(isPal && count < compareStr.size())
+	while(isPal && count < paliForward.Size())
 	{
-		if(compareStr[count] == compareStr[((compareStr.size()-count))-1])
+		if(paliForward.Front() == paliReverse.Front())
 		{
-			count++;
+			paliForward.Dequeue();
+			paliReverse.Dequeue();
 		}
 		else
 		{
@@ -34,7 +47,7 @@ bool IsPalindrome(Deque<char>palindrome)
 	return isPal;
 }
 
-void PrintPalindrome(Deque<char>palindrome)
+void PrintPalindrome(Deque<char>&palindrome)
 {
 
 	if(palindrome.IsEmpty())

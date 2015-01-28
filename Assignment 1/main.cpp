@@ -1,3 +1,10 @@
+/************************************************************************
+* AUTHOR 		: James Davis
+* ASSIGNMENT # 	: 1
+* CLASS 		: CS1D
+* SECTION 		: T Th 5:30pm
+* DUE DATE 		: 1/27/2015
+************************************************************************/
 #include "header.h"
 
 int main()
@@ -14,11 +21,6 @@ int main()
 	strList[7].FillDeque("Was it a car or a cat I saw?");
 	strList[8].FillDeque("Sit on a potato pan, Otis");
 	strList[9].FillDeque("Saddleback is a great place to learn");
-
-	for(int count = 0; count < 10; count ++)
-	{
-		strList[count].PrintDeque();
-	}
 
 	for(int count = 0; count < 10; count ++)
 	{
